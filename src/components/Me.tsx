@@ -1,4 +1,7 @@
 import { mainStyles } from "../styles/mainStyles";
+import { ComputerCanvas } from "./canvas/Computers";
+
+// import "./Me.css";
 
 export function Me() {
 	return (
@@ -20,6 +23,7 @@ export function Me() {
 					</p>
 				</div>
 			</div>
+			<ComputerCanvas />
 		</section>
 	);
 }
