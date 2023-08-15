@@ -1,12 +1,14 @@
-import { Suspense } from "react";
-
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import { Suspense, useEffect, useState } from "react";
+
 import { ComputerLoader } from "../ComputerLoader";
 
-// loader
+interface ComputerProps {
+	isMobile: boolean;
+}
 
-function Computer() {
+function Computer({ isMobile }: ComputerProps) {
 	const computer = useGLTF("./desktop_pc/scene.gltf");
 	return (
 		<mesh>
@@ -22,8 +24,8 @@ function Computer() {
 			<pointLight intensity={1} />
 			<primitive
 				object={computer.scene}
-				scale={0.75}
-				position={[0, -3.25, -1.5]}
+				scale={isMobile ? 0.45 : 0.75}
+				position={isMobile ? [0, -2, -1] : [0, -3.9, -1.4]}
 				rotation={[-0.01, -0.2, -0.1]}
 			/>
 		</mesh>
@@ -31,6 +33,23 @@ function Computer() {
 }
 
 export function ComputerCanvas() {
+	const [isMobile, setIsMobile] = useState(false);
+
+	useEffect(() => {
+		const mediaQuery = window.matchMedia("(max-width: 500px)");
+		setIsMobile(mediaQuery.matches);
+
+		const handleMediaQueryChange = (e: MediaQueryListEvent) => {
+			setIsMobile(e.matches);
+		};
+
+		mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+		return () => {
+			mediaQuery.removeEventListener("change", handleMediaQueryChange);
+		};
+	}, []);
+
 	return (
 		<Canvas
 			frameloop="demand"
@@ -41,7 +60,7 @@ export function ComputerCanvas() {
 			{/* TODO: PUT SOME PARTICLES */}
 			<Suspense fallback={<ComputerLoader />}>
 				<OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
-				<Computer />
+				<Computer isMobile={isMobile} />
 			</Suspense>
 			<Preload all={true} />
 		</Canvas>
