@@ -1,9 +1,5 @@
-function importImageFrom(path: string) {
-	return require(`${path}`);
-}
-
-const logo = importImageFrom("../assets/mainLogo/E-logo.png");
-const menu = importImageFrom("../assets/menu/menuCircle.png");
-const xmark = importImageFrom("./close/x-mark.png");
+import logo from "../assets/mainLogo/E-logo.png";
+import menu from "../assets/menu/menuCircle.png";
+import xmark from "./close/x-mark.png";
 
 export { logo, menu, xmark };
