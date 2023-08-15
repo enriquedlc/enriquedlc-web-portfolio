@@ -2,9 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 // TODO: FIX THIS
-import xmark from "../assets/close/x-mark.png";
-import logo from "../assets/mainLogo/E-logo.png";
-import menu from "../assets/menu/menuCircle.png";
+import { logo, menu, xmark } from "../assets";
 
 import { navTitles } from "../constants/constants";
 
@@ -28,8 +26,9 @@ export function Navbar() {
 					}}
 				>
 					<img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-					<p className="text-white text-[18px] font-bold cursor-pointer">
-						Enrique &nbsp;<span className="sm:block hidden">| De La Concepción</span>
+					<p className="text-white text-[18px] font-bold cursor-pointer flex">
+						Enrique&nbsp;
+						<span className="sm:block hidden">| De La Concepción</span>
 					</p>
 				</Link>
 				<ul className="list-none hidden sm:flex flex-row gap-10">
