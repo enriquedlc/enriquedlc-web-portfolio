@@ -25,7 +25,7 @@ function Computer({ isMobile }: ComputerProps) {
 			<primitive
 				object={computer.scene}
 				scale={isMobile ? 0.45 : 0.75}
-				position={isMobile ? [0, -2, -1] : [0, -3.9, -1.4]}
+				position={isMobile ? [0, -2, -1] : [0, -3.9, -1.3]}
 				rotation={[-0.01, -0.2, -0.1]}
 			/>
 		</mesh>
@@ -54,7 +54,7 @@ export function ComputerCanvas() {
 		<Canvas
 			frameloop="demand"
 			shadows={true}
-			camera={{ position: [20, 3, 5], fov: 25 }}
+			camera={isMobile ? { position: [20, 3, 5], fov: 31 } : { position: [20, 3, 5], fov: 25 }}
 			gl={{ preserveDrawingBuffer: true }}
 		>
 			{/* TODO: PUT SOME PARTICLES */}
