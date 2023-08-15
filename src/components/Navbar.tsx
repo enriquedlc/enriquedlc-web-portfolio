@@ -2,7 +2,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 // TODO: FIX THIS
+import xmark from "../assets/close/x-mark.png";
 import logo from "../assets/mainLogo/E-logo.png";
+import menu from "../assets/menu/menuCircle.png";
 
 import { navTitles } from "../constants/constants";
 
@@ -10,7 +12,7 @@ import { mainStyles } from "../styles/mainStyles";
 
 export function Navbar() {
 	const [active, setActive] = useState("");
-	// const [toggle, setToggle] = useState(false);
+	const [toggle, setToggle] = useState(false);
 
 	return (
 		<nav
@@ -44,6 +46,38 @@ export function Navbar() {
 						</li>
 					))}
 				</ul>
+				<div className="sm:hidden flex flex-1 justify-end items-center">
+					{/* rome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
+					<img
+						src={toggle ? xmark : menu}
+						alt="menu"
+						className="w-[28px] h-[28px] object-contain cursor-pointer"
+						onClick={() => setToggle(!toggle)}
+					/>
+					<div
+						className={`${
+							toggle ? "flex" : "hidden"
+						} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[160px] z-10 rounded-md`}
+					>
+						<ul className="list-none flex sm:flex justify-end items-start flex-col gap-4">
+							{navTitles.map((title) => (
+								// rome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
+								<li
+									key={title.id}
+									className={`${
+										active === title.name ? "text-white" : "text-secondary"
+									} font-poppins font-medium cursor-pointer text-[16px]`}
+									onClick={() => {
+										setToggle(!toggle);
+										setActive(title.name);
+									}}
+								>
+									<a href={`#${title.id}`}>{title.name}</a>
+								</li>
+							))}
+						</ul>
+					</div>
+				</div>
 			</div>
 		</nav>
 	);
