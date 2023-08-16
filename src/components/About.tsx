@@ -44,7 +44,7 @@ interface AreaCardProps {
 }
 
 function AreaCard(props: AreaCardProps) {
-	const { area, key, index } = props;
+	const { area, index } = props;
 
 	return (
 		<Tilt className="xs:w-[250px] w-full">

@@ -1,7 +1,7 @@
 export const mainStyles = {
 	paddingX: "sm:px-16 px-6",
 	paddingY: "sm:py-16 py-6",
-	padding: "sm:px-16 px-6 sm:py-16 py-10",
+	padding: "sm:px-18 px-8 sm:py-16 py-10",
 
 	heroHeadText:
 		"font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[45px] text-[40px] lg:leading-[100px] mt-2.5",
