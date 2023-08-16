@@ -1,7 +1,12 @@
 // TODO: fix imports
 
-import logo from "../assets/mainLogo/E-logo.png";
-import menu from "../assets/menu/menuCircle.png";
 import xmark from "./close/x-mark.png";
+import logo from "./mainLogo/E-logo.png";
+import menu from "./menu/menuCircle.png";
 
-export { logo, menu, xmark };
+// developer Areas
+import backend from "./developerAreas/backend.png";
+import mobile from "./developerAreas/mobile.png";
+import web from "./developerAreas/web.png";
+
+export { backend, logo, menu, mobile, web, xmark };
