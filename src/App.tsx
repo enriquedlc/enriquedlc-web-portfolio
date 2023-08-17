@@ -6,7 +6,7 @@ import Experience from "./components/Experience";
 import { Me } from "./components/Me";
 import { Navbar } from "./components/Navbar";
 import { Stars } from "./components/Stars";
-import { Tech } from "./components/Tech";
+import Tech from "./components/Tech";
 import { Works } from "./components/Works";
 
 function App() {
