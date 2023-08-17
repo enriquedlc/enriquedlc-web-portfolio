@@ -9,4 +9,8 @@ import backend from "./developerAreas/backend.png";
 import mobile from "./developerAreas/mobile.png";
 import web from "./developerAreas/web.png";
 
-export { backend, logo, menu, mobile, web, xmark };
+// experience icons
+import itopIcon from "./experience-icons/itopIcon.png";
+import salesianosIcon from "./experience-icons/salesianosIcon2.png";
+
+export { backend, itopIcon, logo, menu, mobile, salesianosIcon, web, xmark };
