@@ -1,3 +1,4 @@
+// @ts-ignore
 import { backend, itopIcon, mobile, salesianosIcon, web } from "../assets";
 
 // Navbar constants
@@ -40,7 +41,7 @@ export const developerAreas: DeveloperArea[] = [
 export interface Experience {
 	title: string;
 	company: string;
-	icon: any;
+	icon: string;
 	iconBg: string;
 	date: string;
 	description: string[];
@@ -84,5 +85,83 @@ export const experiences: Experience[] = [
 			"Making user friendly and accessible interfaces.",
 			"Introduction to SAP Business One, database management and data flow.",
 		],
+	},
+];
+
+// import technologiesç
+import {
+	html,
+	css,
+	javascript,
+	typescript,
+	react,
+	// redux,
+	nodejs,
+	// mongodb,
+	git,
+	github,
+	java,
+	springboot,
+	mysql,
+	ionic,
+	// @ts-ignore
+} from "../assets";
+
+export const technologies = [
+	{
+		name: "HTML 5",
+		icon: html,
+	},
+	{
+		name: "CSS 3",
+		icon: css,
+	},
+	{
+		name: "JavaScript",
+		icon: javascript,
+	},
+	{
+		name: "TypeScript",
+		icon: typescript,
+	},
+	{
+		name: "React JS",
+		icon: react,
+	},
+	// {
+	// 	name: "Redux Toolkit",
+	// 	icon: redux,
+	// },
+	{
+		name: "Node JS",
+		icon: nodejs,
+	},
+	{
+		name: "Ionic Framework",
+		icon: ionic,
+	},
+	// {
+	// 	name: "MongoDB",
+	// 	icon: mongodb,
+	// },
+	{
+		name: "git",
+		icon: git,
+	},
+	{
+		name: "GitHub",
+		icon: github,
+	},
+	{
+		name: "Java",
+		icon: java,
+	},
+	{
+		name: "Spring Boot",
+		icon: springboot,
+	},
+	{
+		name: "MySQL",
+		icon: mysql,
 	},
 ];
