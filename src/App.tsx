@@ -2,7 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import About from "./components/About";
 import { Contact } from "./components/Contact";
-import { Experience } from "./components/Experience";
+import Experience from "./components/Experience";
 import { Me } from "./components/Me";
 import { Navbar } from "./components/Navbar";
 import { Stars } from "./components/Stars";
