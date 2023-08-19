@@ -2,7 +2,7 @@ import {
 	coming_soon_leaning_right,
 	coming_soon_leaning_left,
 	coming_soon_straight,
-} from "../assets/index.js";
+} from "../assets/index";
 
 type Tag = {
 	name: string;

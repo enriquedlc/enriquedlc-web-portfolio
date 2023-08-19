@@ -1,5 +1,24 @@
-// @ts-ignore
-import { backend, itopIcon, mobile, salesianosIcon, web } from "../assets";
+import {
+	html,
+	css,
+	javascript,
+	typescript,
+	reactjs,
+	// redux,
+	nodejs,
+	// mongodb,
+	git,
+	github,
+	java,
+	springboot,
+	mysql,
+	ionic,
+	web,
+	mobile,
+	backend,
+	salesianosIcon,
+	itopIcon,
+} from "../assets/index";
 
 // Navbar constants
 export const navTitles = [
@@ -41,7 +60,7 @@ export const developerAreas: DeveloperArea[] = [
 export interface Experience {
 	title: string;
 	company: string;
-	icon: typeof import("*.png");
+	icon: string;
 	iconBg: string;
 	date: string;
 	description: string[];
@@ -89,23 +108,6 @@ export const experiences: Experience[] = [
 ];
 
 // import technologiesç
-import {
-	html,
-	css,
-	javascript,
-	typescript,
-	react,
-	// redux,
-	nodejs,
-	// mongodb,
-	git,
-	github,
-	java,
-	springboot,
-	mysql,
-	ionic,
-	// @ts-ignore
-} from "../assets";
 
 export const technologies = [
 	{
@@ -126,7 +128,7 @@ export const technologies = [
 	},
 	{
 		name: "React JS",
-		icon: react,
+		icon: reactjs,
 	},
 	// {
 	// 	name: "Redux Toolkit",

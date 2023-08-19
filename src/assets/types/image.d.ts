@@ -1,8 +1,9 @@
-// images.d.ts
 declare module "*.jpg" {
-	export const jpg_image: string;
+	const jpgImage: string;
+	export default jpgImage;
 }
 
 declare module "*.png" {
-	export const png_image: string;
+	const pngImage: string;
+	export default pngImage;
 }
