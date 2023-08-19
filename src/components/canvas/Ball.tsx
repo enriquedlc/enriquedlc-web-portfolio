@@ -15,7 +15,7 @@ const Ball = (props: BallProps) => {
 		<Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
 			<ambientLight intensity={0.25} />
 			<directionalLight position={[0, 0, 0.05]} />
-			<mesh castShadow={true} receiveShadow={true} scale={2.75}>
+			<mesh castShadow={true} receiveShadow={true} scale={3}>
 				<icosahedronGeometry args={[1, 1]} />
 				<meshStandardMaterial
 					color="#fff8eb"
@@ -29,7 +29,7 @@ const Ball = (props: BallProps) => {
 					scale={1}
 					map={decal}
 					// @ts-ignore
-					flatShading={true}
+					flatShading={{ position: [0, 0, 1] }}
 				/>
 			</mesh>
 		</Float>
@@ -47,7 +47,6 @@ const BallCanvas = ({ icon }: BallCanvasProps) => {
 				<OrbitControls enableZoom={false} />
 				<Ball imgUrl={icon} />
 			</Suspense>
-
 			<Preload all={true} />
 		</Canvas>
 	);

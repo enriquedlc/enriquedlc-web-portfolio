@@ -41,7 +41,7 @@ export const developerAreas: DeveloperArea[] = [
 export interface Experience {
 	title: string;
 	company: string;
-	icon: string;
+	icon: typeof import("*.png");
 	iconBg: string;
 	date: string;
 	description: string[];

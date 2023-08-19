@@ -28,6 +28,11 @@ import springboot from "./tech/springboot.png";
 import mysql from "./tech/mysql.png";
 import ionic from "./tech/ionic.png";
 
+// project images
+import coming_soon_leaning_right from "./project-images/coming-soon/coming-soon-leaning.right.png";
+import coming_soon_leaning_left from "./project-images/coming-soon/coming-soon-leaning-left.png";
+import coming_soon_straight from "./project-images/coming-soon/coming-soon-straight.png";
+
 export {
 	backend,
 	itopIcon,
@@ -51,4 +56,7 @@ export {
 	springboot,
 	mysql,
 	ionic,
+	coming_soon_leaning_right,
+	coming_soon_leaning_left,
+	coming_soon_straight,
 };
