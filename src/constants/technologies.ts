@@ -15,7 +15,7 @@ import {
 	ionic,
 } from "../assets/index";
 
-// import technologiesç
+// import technologies
 
 export const technologies = [
 	{
