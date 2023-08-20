@@ -1,20 +1,4 @@
-import { web, mobile, backend } from "../assets";
-
-// Navbar constants
-export const navTitles = [
-	{
-		id: "about",
-		name: "About",
-	},
-	{
-		id: "projects",
-		name: "Projects",
-	},
-	{
-		id: "contact",
-		name: "Contact",
-	},
-];
+import { web, mobile, backend } from "../assets/index";
 
 export type DeveloperArea = {
 	title: string;
