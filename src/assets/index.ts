@@ -1,6 +1,6 @@
 // menu icons
 import xmark from "./close/x-mark.png";
-import logo from "./mainLogo/E-logo.png";
+import logo from "./favicon/E-logo.png";
 import menu from "./menu/menuCircle.png";
 
 // developer Areas
@@ -9,8 +9,8 @@ import mobile from "./developerAreas/mobile.png";
 import web from "./developerAreas/web.png";
 
 // experience icons
-import itopIcon from "./experience-icons/itopIcon.png";
-import salesianosIcon from "./experience-icons/salesianosIcon2.png";
+import itop_icon from "./experience-icons/itop-icon.png";
+import salesianos_icon from "./experience-icons/salesianos-icon.png";
 
 // project images
 import coming_soon_leaning_right from "./project-images/coming-soon/coming-soon-leaning.right.png";
@@ -35,11 +35,11 @@ import ionic from "./tech/ionic.png";
 
 export {
 	backend,
-	itopIcon,
+	itop_icon,
 	logo,
 	menu,
 	mobile,
-	salesianosIcon,
+	salesianos_icon,
 	web,
 	xmark,
 	coming_soon_leaning_right,

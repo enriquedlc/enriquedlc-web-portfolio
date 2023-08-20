@@ -3,7 +3,7 @@ import { Tilt } from "react-tilt";
 
 import { SectionWrapper } from "../hoc";
 
-import { DeveloperArea, developerAreas } from "../constants/constants";
+import { type DeveloperArea, developerAreas } from "../constants/developerAreas";
 import { fadeIn, textVariant } from "../utils/motion";
 
 import { mainStyles } from "../styles/mainStyles";
