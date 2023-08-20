@@ -7,7 +7,7 @@ import { Me } from "./components/Me";
 import { Navbar } from "./components/Navbar";
 import { Stars } from "./components/Stars";
 import Tech from "./components/Tech";
-import { Works } from "./components/Works";
+import Projects from "./components/Project";
 
 function App() {
 	return (
@@ -20,7 +20,7 @@ function App() {
 				<About />
 				<Experience />
 				<Tech />
-				<Works />
+				<Projects />
 				<div className="relative z-0">
 					<Contact />
 					<Stars />

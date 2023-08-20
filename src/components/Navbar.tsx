@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // TODO: FIX THIS
 import { logo, menu, xmark } from "../assets";
 
-import { navTitles } from "../constants/constants";
+import { navTitles } from "../constants/navTitles";
 
 import { mainStyles } from "../styles/mainStyles";
 
