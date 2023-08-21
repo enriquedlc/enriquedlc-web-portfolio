@@ -10,12 +10,10 @@ function Stars(props) {
 	const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.2 }));
 
 	useFrame((_state, delta) => {
-		if (starsRef.current) {
-			// @ts-ignore
-			starsRef.current.rotation.x += delta / 10;
-			// @ts-ignore
-			starsRef.current.rotation.y += delta / 15;
-		}
+		// @ts-ignore
+		starsRef.current.rotation.x += delta / 10;
+		// @ts-ignore
+		starsRef.current.rotation.y += delta / 15;
 	});
 
 	return (

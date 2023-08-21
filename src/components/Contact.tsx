@@ -1,21 +1,69 @@
-import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
-import { emailjs } from "emailjs-com";
+import { ChangeEvent, FormEvent, useRef, useState } from "react";
 import { mainStyles } from "../styles/mainStyles";
 
-import { EarthCanvas } from "./canvas/Earth";
 import { SectionWrapper } from "../hoc";
+import { EarthCanvas } from "./canvas/Earth";
+
+import credentials from "../credentials.json";
 
 import { slideIn } from "../utils/motion";
 
 function Contact() {
-	const formRef = useRef<HTMLFormElement>(null);
+	const formRef = useRef();
 	const [form, setForm] = useState({
 		name: "",
 		email: "",
 		message: "",
 	});
 	const [loading, setLoading] = useState(false);
+
+	const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+		const { name, value } = e.target;
+
+		setForm({ ...form, [name]: value });
+	};
+
+	const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+		e.preventDefault();
+		setLoading(true);
+
+		console.log(formRef.current);
+
+		emailjs
+			.send(
+				credentials.emailjs.SERVICE_ID,
+				credentials.emailjs.TEMPLATE_ID,
+				{
+					from_name: form.name,
+					to_name: "Enrique",
+					from_email: form.email,
+					to_email: credentials.emailjs.TO_EMAIL,
+					message: form.message,
+				},
+				credentials.emailjs.PUBLIC_KEY,
+			)
+			.then(
+				() => {
+					setLoading(false);
+					alert("Thank you. I will get back to you as soon as possible.");
+					setForm({
+						name: "",
+						email: "",
+						message: "",
+					});
+				},
+				(error) => {
+					setLoading(false);
+					console.error(error);
+					alert("Something went wrong. Please try again.");
+				},
+			)
+			.finally(() => {
+				setLoading(false);
+			});
+	};
 
 	// TODO: make the form bigger in larger devices
 	return (
@@ -28,8 +76,9 @@ function Contact() {
 				<h3 className={mainStyles.sectionHeadText}>Contact me.</h3>
 				<form
 					action="submit"
+					// @ts-ignore
 					ref={formRef}
-					// onSubmit={handleSubmit}
+					onSubmit={(e) => handleSubmit(e)}
 					className="mt-12 flex flex-col gap-8"
 				>
 					<label htmlFor="name" className="flex flex-col">
@@ -40,7 +89,7 @@ function Contact() {
 							name="name"
 							value={form.name}
 							placeholder="What's your name?"
-							// onChange={handleChange}
+							onChange={handleChange}
 							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white outline-none rounded-lg font-medium"
 						/>
 					</label>
@@ -52,7 +101,7 @@ function Contact() {
 							name="email"
 							value={form.email}
 							placeholder="What's your email?"
-							// onChange={handleChange}
+							onChange={handleChange}
 							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white outline-none rounded-lg font-medium"
 						/>
 					</label>
@@ -63,7 +112,7 @@ function Contact() {
 							name="message"
 							value={form.message}
 							placeholder="What do you want to say?"
-							// onChange={handleChange}
+							onChange={handleChange}
 							className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white outline-none rounded-lg font-medium min-h-[150px]"
 						/>
 					</label>
