@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-// TODO: FIX THIS
 import { logo, menu, xmark } from "../assets";
 
 import { navTitles } from "../constants/navTitles";
