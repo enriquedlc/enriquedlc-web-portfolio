@@ -1,41 +1,4 @@
-// @ts-ignore
-import { backend, itopIcon, mobile, salesianosIcon, web } from "../assets";
-
-// Navbar constants
-export const navTitles = [
-	{
-		id: "about",
-		name: "About",
-	},
-	{
-		id: "projects",
-		name: "Projects",
-	},
-	{
-		id: "contact",
-		name: "Contact",
-	},
-];
-
-export type DeveloperArea = {
-	title: string;
-	icon: string;
-};
-
-export const developerAreas: DeveloperArea[] = [
-	{
-		title: "Web developer",
-		icon: web,
-	},
-	{
-		title: "Mobile developer",
-		icon: mobile,
-	},
-	{
-		title: "Backend developer",
-		icon: backend,
-	},
-];
+import { itop_icon, salesianos_icon } from "../assets/index";
 
 // Experience
 export interface Experience {
@@ -51,7 +14,7 @@ export const experiences: Experience[] = [
 	{
 		title: "CFGS Desarrollo de Aplicaciones Multiplataforma",
 		company: "Salesianos",
-		icon: salesianosIcon,
+		icon: salesianos_icon,
 		iconBg: "#383E56",
 		date: "September 2021 - May 2023",
 		description: [
@@ -65,7 +28,7 @@ export const experiences: Experience[] = [
 	{
 		title: "Web developer",
 		company: "Itop Consulting",
-		icon: itopIcon,
+		icon: itop_icon,
 		iconBg: "#383E56",
 		date: "March 2023 - May 2023",
 		description: [
@@ -77,7 +40,7 @@ export const experiences: Experience[] = [
 	{
 		title: "Web developer / programmer",
 		company: "Itop Consulting",
-		icon: itopIcon,
+		icon: itop_icon,
 		iconBg: "#383E56",
 		date: "March 2023 - Present",
 		description: [
@@ -85,83 +48,5 @@ export const experiences: Experience[] = [
 			"Making user friendly and accessible interfaces.",
 			"Introduction to SAP Business One, database management and data flow.",
 		],
-	},
-];
-
-// import technologiesç
-import {
-	html,
-	css,
-	javascript,
-	typescript,
-	react,
-	// redux,
-	nodejs,
-	// mongodb,
-	git,
-	github,
-	java,
-	springboot,
-	mysql,
-	ionic,
-	// @ts-ignore
-} from "../assets";
-
-export const technologies = [
-	{
-		name: "HTML 5",
-		icon: html,
-	},
-	{
-		name: "CSS 3",
-		icon: css,
-	},
-	{
-		name: "JavaScript",
-		icon: javascript,
-	},
-	{
-		name: "TypeScript",
-		icon: typescript,
-	},
-	{
-		name: "React JS",
-		icon: react,
-	},
-	// {
-	// 	name: "Redux Toolkit",
-	// 	icon: redux,
-	// },
-	{
-		name: "Node JS",
-		icon: nodejs,
-	},
-	{
-		name: "Ionic Framework",
-		icon: ionic,
-	},
-	// {
-	// 	name: "MongoDB",
-	// 	icon: mongodb,
-	// },
-	{
-		name: "git",
-		icon: git,
-	},
-	{
-		name: "GitHub",
-		icon: github,
-	},
-	{
-		name: "Java",
-		icon: java,
-	},
-	{
-		name: "Spring Boot",
-		icon: springboot,
-	},
-	{
-		name: "MySQL",
-		icon: mysql,
 	},
 ];

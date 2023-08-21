@@ -57,9 +57,12 @@ export function ComputerCanvas() {
 			camera={{ position: [20, 3, 5], fov: 25 }}
 			gl={{ preserveDrawingBuffer: true }}
 		>
-			{/* TODO: PUT SOME PARTICLES */}
 			<Suspense fallback={<ComputerLoader />}>
-				<OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
+				<OrbitControls
+					enableZoom={false}
+					maxPolarAngle={Math.PI / 2}
+					minPolarAngle={Math.PI / 2}
+				/>
 				<Computer isMobile={isMobile} />
 			</Suspense>
 

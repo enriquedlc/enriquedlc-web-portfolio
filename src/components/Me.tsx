@@ -17,11 +17,11 @@ export function Me() {
 
 				<div>
 					<h1 className={`${mainStyles.heroHeadText}`}>
-						Hi I'm <span className="text-[#915eff]">Enrique</span>
+						Hi I'm <span className="text-[#915eff]">Enrique </span>
 					</h1>
 					<p className={`${mainStyles.heroSubText} mt-2 text-white-100`}>
-						Specialized in developing <br className="sm:block hidden" /> both front-end and back-end
-						applications.
+						Specialized in developing <br className="sm:block hidden" /> both front-end
+						and back-end applications.
 					</p>
 				</div>
 			</div>
