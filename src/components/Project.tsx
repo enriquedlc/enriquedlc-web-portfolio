@@ -6,7 +6,7 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 import { Project, projects } from "../constants/projects";
-import { github } from "../assets/index.js";
+import { github } from "../assets/index";
 
 interface ProjectCardProps {
 	project: Project;
@@ -73,15 +73,19 @@ export function Works() {
 						variants={fadeIn("", "", 0.2, 1)}
 						className="empty-3 text-secondary text-[17px] max-w-3xl leading-[30px] "
 					>
-						The following are some of the projects I have worked on, those showcases my skills and
-						experience in front-end and back-end development. Each project has a link to the live
-						version and the source code. It reflects my ability to work with different technologies
-						and skills to manage projects effectively.
+						The following are some of the projects I have worked on, those showcases my
+						skills and experience in front-end and back-end development. Each project has
+						a link to the live version and the source code. It reflects my ability to work
+						with different technologies and skills to manage projects effectively.
 					</motion.p>
 				</div>
 				<div className="mt-20 flex flex-wrap gap-7">
 					{projects.map((project, index) => (
-						<ProjectCard key={`${project.name}${index}`} project={project} index={index} />
+						<ProjectCard
+							key={`${project.name}${index}`}
+							project={project}
+							index={index}
+						/>
 					))}
 				</div>
 			</motion.div>
