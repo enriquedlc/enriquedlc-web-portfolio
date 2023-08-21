@@ -32,6 +32,9 @@ import java from "./tech/java.png";
 import springboot from "./tech/springboot.png";
 import mysql from "./tech/mysql.png";
 import ionic from "./tech/ionic.png";
+import linkedin from "./tech/linkedin.png";
+import cv from "./tech/cv.png";
+import cvpdf from "./cv/cvpdf.pdf";
 
 export {
 	backend,
@@ -59,4 +62,7 @@ export {
 	springboot,
 	mysql,
 	ionic,
+	linkedin,
+	cv,
+	cvpdf,
 };

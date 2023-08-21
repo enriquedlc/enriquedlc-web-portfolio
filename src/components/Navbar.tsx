@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-// TODO: FIX THIS
 import { logo, menu, xmark } from "../assets";
 
 import { navTitles } from "../constants/navTitles";
 
 import { mainStyles } from "../styles/mainStyles";
+import { DownloadCVButton } from "./DownloadCVButton";
 
 export function Navbar() {
 	const [active, setActive] = useState("");
@@ -31,7 +31,7 @@ export function Navbar() {
 						<span className="sm:block hidden">| De La Concepción</span>
 					</p>
 				</Link>
-				<ul className="list-none hidden sm:flex flex-row gap-10">
+				<ul className="list-none hidden sm:flex flex-row gap-6">
 					{navTitles.map((title) => (
 						// rome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
 						<li
@@ -41,9 +41,22 @@ export function Navbar() {
 							} hover:text-white text-[18px] cursor-pointer`}
 							onClick={() => setActive(title.name)}
 						>
-							<a href={`#${title.id}`}>{title.name}</a>
+							<a href={`#${title.id}`}>
+								{title.icon ? (
+									<button type="button" onClick={() => window.open(title.link)}>
+										<img
+											className="w-[32px] h-[32px]"
+											src={title.icon}
+											alt={title.name}
+										/>
+									</button>
+								) : (
+									title.name
+								)}
+							</a>
 						</li>
 					))}
+					<DownloadCVButton />
 				</ul>
 				<div className="sm:hidden flex flex-1 justify-end items-center">
 					{/* rome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
@@ -71,9 +84,22 @@ export function Navbar() {
 										setActive(title.name);
 									}}
 								>
-									<a href={`#${title.id}`}>{title.name}</a>
+									<a href={`#${title.id}`}>
+										{title.icon ? (
+											<button type="button" onClick={() => window.open(title.link)}>
+												<img
+													className="w-[32px] h-[32px]"
+													src={title.icon}
+													alt={title.name}
+												/>
+											</button>
+										) : (
+											title.name
+										)}
+									</a>
 								</li>
 							))}
+							<DownloadCVButton />
 						</ul>
 					</div>
 				</div>
