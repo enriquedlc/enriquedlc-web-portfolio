@@ -40,7 +40,13 @@ export function Navbar() {
 							} hover:text-white text-[18px] cursor-pointer`}
 							onClick={() => setActive(title.name)}
 						>
-							<a href={`#${title.id}`}>{title.name}</a>
+							<a href={`#${title.id}`}>
+								{title.icon ? (
+									<img className="w-[32px] h-[32px]" src={title.icon} alt={title.name} />
+								) : (
+									title.name
+								)}
+							</a>
 						</li>
 					))}
 				</ul>
@@ -70,7 +76,17 @@ export function Navbar() {
 										setActive(title.name);
 									}}
 								>
-									<a href={`#${title.id}`}>{title.name}</a>
+									<a href={`#${title.id}`}>
+										{title.icon ? (
+											<img
+												className="w-[32px] h-[32px]"
+												src={title.icon}
+												alt={title.name}
+											/>
+										) : (
+											title.name
+										)}
+									</a>
 								</li>
 							))}
 						</ul>

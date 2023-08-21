@@ -1,3 +1,5 @@
+import { github, linkedin } from "../assets";
+
 // Navbar constants
 export const navTitles = [
 	{
@@ -11,5 +13,15 @@ export const navTitles = [
 	{
 		id: "contact",
 		name: "Contact",
+	},
+	{
+		id: "github",
+		name: "Github",
+		icon: github,
+	},
+	{
+		id: "linkedin",
+		name: "Linkedin",
+		icon: linkedin,
 	},
 ];
