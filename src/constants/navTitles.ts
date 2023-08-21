@@ -1,4 +1,4 @@
-import { cv, github, linkedin } from "../assets";
+import { github, linkedin } from "../assets";
 
 // Navbar constants
 export const navTitles = [
