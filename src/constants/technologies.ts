@@ -13,6 +13,8 @@ import {
 	springboot,
 	mysql,
 	ionic,
+	tailwind,
+	aws
 } from "../assets/index";
 
 // import technologies
@@ -74,4 +76,12 @@ export const technologies = [
 		name: "MySQL",
 		icon: mysql,
 	},
+	{
+		name: "Tailwind CSS",
+		icon: tailwind,
+	},
+	{
+		name: "AWS",
+		icon: aws,
+	}
 ];

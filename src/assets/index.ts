@@ -27,6 +27,8 @@ import css from "./tech/css-svgrepo-com.svg";
 import javascript from "./tech/js-official-svgrepo-com.svg"
 import typescript from "./tech/typescript-icon-svgrepo-com.svg"
 import reactjs from "./tech/react-svgrepo-com.svg";
+import tailwind from "./tech/tailwind-svgrepo-com.svg";
+import aws from "./tech/aws-svgrepo-com.svg";
 // import redux from "./tech/redux.png";
 import nodejs from "./tech/node-svgrepo-com.svg"
 // import mongodb from "./tech/mongodb.png";
@@ -71,6 +73,8 @@ export {
 	linkedin,
 	cv,
 	cvpdf,
+	tailwind,
+	aws
 };
 
 export const HEROS = {
@@ -78,21 +82,3 @@ export const HEROS = {
 	article_scanner_server,
 }
 
-export const TECH_ICONS = {
-	html,
-	css,
-	javascript,
-	typescript,
-	reactjs,
-	// redux,
-	nodejs,
-	// mongodb,
-	git,
-	github,
-	java,
-	springboot,
-	mysql,
-	ionic,
-	linkedin,
-	cv,
-}
