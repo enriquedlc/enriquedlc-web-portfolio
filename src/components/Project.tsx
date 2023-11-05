@@ -45,7 +45,7 @@ const ProjectCard = (props: ProjectCardProps) => {
 					<div className="mt-5">
 						<h3 className="text-white text-[24px] font-bold">{project.name}</h3>
 						<p className="mt-2 text-secondary text-[15px]" style={{ margin: 0 }}>
-							{project.name}
+							{project.description}
 						</p>
 					</div>
 					<div className="mt-4 flex flex-wrap gap-2">
