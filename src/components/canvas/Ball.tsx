@@ -42,13 +42,9 @@ interface BallCanvasProps {
 
 const BallCanvas = ({ icon }: BallCanvasProps) => {
 	return (
-		<Canvas frameloop="demand" dpr={[1, 2]} gl={{ preserveDrawingBuffer: true }}>
 			<Suspense fallback={<ComputerLoader />}>
-				<OrbitControls enableZoom={false} />
-				<Ball imgUrl={icon} />
+				<img src={icon} alt="" className="h-24" />
 			</Suspense>
-			<Preload all={true} />
-		</Canvas>
 	);
 };
 

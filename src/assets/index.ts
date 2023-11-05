@@ -22,22 +22,24 @@ import article_scanner_hero from "./project-images/actual-projects/article-scann
 import article_scanner_server from "./project-images/actual-projects/article-scanner-server.png"
 
 // tech icons
-import html from "./tech/html.png";
-import css from "./tech/css.png";
-import javascript from "./tech/javascript.png";
-import typescript from "./tech/typescript.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import nodejs from "./tech/nodejs.png";
-import mongodb from "./tech/mongodb.png";
-import git from "./tech/git.png";
-import github from "./tech/github.png";
-import java from "./tech/java.png";
-import springboot from "./tech/springboot.png";
-import mysql from "./tech/mysql.png";
-import ionic from "./tech/ionic.png";
-import linkedin from "./tech/linkedin.png";
-import cv from "./tech/cv.png";
+import html from "./tech/html-5-svgrepo-com.svg";
+import css from "./tech/css-svgrepo-com.svg";
+import javascript from "./tech/js-official-svgrepo-com.svg"
+import typescript from "./tech/typescript-icon-svgrepo-com.svg"
+import reactjs from "./tech/react-svgrepo-com.svg";
+// import redux from "./tech/redux.png";
+import nodejs from "./tech/node-svgrepo-com.svg"
+// import mongodb from "./tech/mongodb.png";
+import git from "./tech/git-svgrepo-com.svg";
+import github from "./tech/github-svgrepo-com.svg";
+import java from "./tech/java-svgrepo-com.svg";
+import springboot from "./tech/spring-svgrepo-com.svg";
+import mysql from "./tech/mysql-svgrepo-com.svg";
+import ionic from "./tech/ionic-icon-svgrepo-com.svg";
+import linkedin from "./tech/linkedin-svgrepo-com.svg";
+import cv from "./tech/curriculum-vitae-portfolio-svgrepo-com.svg";
+
+// others
 import cvpdf from "./cv/cvpdf.pdf";
 
 export {
@@ -57,9 +59,9 @@ export {
 	javascript,
 	typescript,
 	reactjs,
-	redux,
+	// redux,
 	nodejs,
-	mongodb,
+	// mongodb,
 	git,
 	github,
 	java,
@@ -74,4 +76,23 @@ export {
 export const HEROS = {
 	article_scanner_hero,
 	article_scanner_server,
+}
+
+export const TECH_ICONS = {
+	html,
+	css,
+	javascript,
+	typescript,
+	reactjs,
+	// redux,
+	nodejs,
+	// mongodb,
+	git,
+	github,
+	java,
+	springboot,
+	mysql,
+	ionic,
+	linkedin,
+	cv,
 }
