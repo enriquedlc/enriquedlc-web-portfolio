@@ -33,7 +33,7 @@ const ProjectCard = (props: ProjectCardProps) => {
 							className="w-full h-full object-cover rounded-2xl"
 						/>
 						<div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-							{/* rome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
+							{/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
 							<div
 								onClick={() => window.open(project.source_code_link, "_blank")}
 								className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-poiter "

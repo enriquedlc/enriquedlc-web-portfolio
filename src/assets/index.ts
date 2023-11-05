@@ -17,6 +17,9 @@ import coming_soon_leaning_right from "./project-images/coming-soon/coming-soon-
 import coming_soon_leaning_left from "./project-images/coming-soon/coming-soon-leaning-left.png";
 import coming_soon_straight from "./project-images/coming-soon/coming-soon-straight.png";
 
+// heros
+import article_scanner_hero from "./project-images/actual-projects/article-scanner-hero.png"
+
 // tech icons
 import html from "./tech/html.png";
 import css from "./tech/css.png";
@@ -66,3 +69,7 @@ export {
 	cv,
 	cvpdf,
 };
+
+export const HEROS = {
+	article_scanner_hero,
+}

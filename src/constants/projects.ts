@@ -2,6 +2,7 @@ import {
 	coming_soon_leaning_right,
 	coming_soon_leaning_left,
 	coming_soon_straight,
+	HEROS,
 } from "../assets/index";
 
 type Tag = {
@@ -19,25 +20,29 @@ export type Project = {
 
 export const projects: Project[] = [
 	{
-		name: "Soon...",
+		name: "Article Scanner",
 		description:
 			"Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
 		tags: [
 			{
-				name: "react",
+				name: "react native",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "mongodb",
+				name: "zustand",
+				color: "pink-text-gradient",
+			},
+			{
+				name: "camera",
 				color: "green-text-gradient",
 			},
 			{
-				name: "tailwind",
-				color: "pink-text-gradient",
+				name: "accessibility",
+				color: "red-text-gradient",
 			},
 		],
-		image: coming_soon_leaning_right,
-		source_code_link: "https://github.com/enriquedlc",
+		image: HEROS.article_scanner_hero,
+		source_code_link: "https://github.com/enriquedlc/scanner-barcode-archive",
 	},
 	{
 		name: "Soon...",
