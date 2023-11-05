@@ -19,6 +19,7 @@ import coming_soon_straight from "./project-images/coming-soon/coming-soon-strai
 
 // heros
 import article_scanner_hero from "./project-images/actual-projects/article-scanner-hero.png"
+import article_scanner_server from "./project-images/actual-projects/article-scanner-server.png"
 
 // tech icons
 import html from "./tech/html.png";
@@ -72,4 +73,5 @@ export {
 
 export const HEROS = {
 	article_scanner_hero,
+	article_scanner_server,
 }

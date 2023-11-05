@@ -45,25 +45,28 @@ export const projects: Project[] = [
 		source_code_link: "https://github.com/enriquedlc/scanner-barcode-archive",
 	},
 	{
-		name: "Soon...",
+		name: "Article Scanner API",
 		description:
-			"Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+			"A REST API designed to facilitate the storage of items from scanned barcodes and other relevant data using NodeJS, express, MVC pattern, MYSQL, zod and more",
 		tags: [
 			{
-				name: "react",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "restapi",
+				name: "nodejs",
 				color: "green-text-gradient",
 			},
 			{
-				name: "scss",
+				name: "restapi",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "architecture",
 				color: "pink-text-gradient",
+			},{
+				name: "mysql",
+				color: "blue-text-gradient",
 			},
 		],
-		image: coming_soon_straight,
-		source_code_link: "https://github.com/enriquedlc",
+		image: HEROS.article_scanner_server,
+		source_code_link: "https://github.com/enriquedlc/article-scanner-server",
 	},
 	{
 		name: "Soon...",
