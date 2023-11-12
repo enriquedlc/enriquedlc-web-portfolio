@@ -31,8 +31,6 @@ function Contact() {
     e.preventDefault();
     setLoading(true);
 
-    console.log(formRef.current);
-
     emailjs
       .send(
         credentials.emailjs.SERVICE_ID,

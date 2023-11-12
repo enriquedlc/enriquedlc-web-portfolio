@@ -58,8 +58,16 @@ export const projects: Project[] = [
         color: "blue-text-gradient",
       },
       {
-        name: "architecture",
+        name: "MVC",
         color: "pink-text-gradient",
+      },
+      {
+        name: "zod",
+        color: "dark-blue-text-gradient",
+      },
+      {
+        name: "express",
+        color: "light-green-text-gradient",
       },
       {
         name: "mysql",
