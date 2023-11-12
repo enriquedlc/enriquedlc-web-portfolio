@@ -2,10 +2,10 @@ import {
   coming_soon_leaning_right,
   coming_soon_leaning_left,
   coming_soon_straight,
-  HEROS,
+  PROJECT_HEROS,
 } from "../assets/index";
 
-type Tag = {
+export type Tag = {
   name: string;
   color: string;
 };
@@ -15,7 +15,7 @@ export type Project = {
   description: string;
   tags: Tag[];
   image: string;
-  source_code_link: string;
+  sourceCodeLink: string;
 };
 
 export const projects: Project[] = [
@@ -41,8 +41,8 @@ export const projects: Project[] = [
         color: "red-text-gradient",
       },
     ],
-    image: HEROS.article_scanner_hero,
-    source_code_link: "https://github.com/enriquedlc/scanner-barcode-archive",
+    image: PROJECT_HEROS.article_scanner_hero,
+    sourceCodeLink: "https://github.com/enriquedlc/scanner-barcode-archive",
   },
   {
     name: "Article Scanner API",
@@ -66,8 +66,8 @@ export const projects: Project[] = [
         color: "blue-text-gradient",
       },
     ],
-    image: HEROS.article_scanner_server,
-    source_code_link: "https://github.com/enriquedlc/article-scanner-server",
+    image: PROJECT_HEROS.article_scanner_server,
+    sourceCodeLink: "https://github.com/enriquedlc/article-scanner-server",
   },
   {
     name: "Soon...",
@@ -87,6 +87,6 @@ export const projects: Project[] = [
       },
     ],
     image: coming_soon_leaning_left,
-    source_code_link: "https://github.com/enriquedlc",
+    sourceCodeLink: "https://github.com/enriquedlc",
   },
 ];

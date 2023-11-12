@@ -18,8 +18,12 @@ import coming_soon_leaning_left from "./project-images/coming-soon/coming-soon-l
 import coming_soon_straight from "./project-images/coming-soon/coming-soon-straight.png";
 
 // heros
+// projects
 import article_scanner_hero from "./project-images/actual-projects/article-scanner-hero.png";
 import article_scanner_server from "./project-images/actual-projects/article-scanner-server.png";
+
+// challenges
+import codember_hero from "./project-images/challenges/codember-hero.png";
 
 // tech icons
 import html from "./tech/html-5-svgrepo-com.svg";
@@ -77,7 +81,11 @@ export {
   aws,
 };
 
-export const HEROS = {
+export const PROJECT_HEROS = {
   article_scanner_hero,
   article_scanner_server,
+};
+
+export const CHALLENGES_HEROS = {
+  codember_hero,
 };

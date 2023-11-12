@@ -8,6 +8,7 @@ import { Navbar } from "./components/Navbar";
 import { StarCanvas } from "./components/Stars";
 import Tech from "./components/Tech";
 import Projects from "./components/Project";
+import Challenge from "./components/Challenge";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Experience />
         <Tech />
         <Projects />
+        <Challenge />
         <div className="relative z-0">
           <Contact />
           <StarCanvas />

@@ -13,7 +13,7 @@ interface ProjectCardProps {
   index: number;
 }
 
-const ProjectCard = (props: ProjectCardProps) => {
+export const ProjectCard = (props: ProjectCardProps) => {
   const { project, index } = props;
   return (
     <>
@@ -35,7 +35,7 @@ const ProjectCard = (props: ProjectCardProps) => {
             <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
               {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
               <div
-                onClick={() => window.open(project.source_code_link, "_blank")}
+                onClick={() => window.open(project.sourceCodeLink, "_blank")}
                 className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-poiter "
               >
                 <img src={github} alt="github" />
