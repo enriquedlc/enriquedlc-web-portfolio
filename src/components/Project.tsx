@@ -24,7 +24,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
             scale: 1,
             speed: 450,
           }}
-          className="bg-tertiary p-5 rounded-2xl sm:w-[300px] w-full"
+          className="bg-tertiary p-5 rounded-2xl sm:w-[500px] w-full"
         >
           <div className="relative w-full h-[230px]">
             <img
@@ -86,7 +86,7 @@ export function Works() {
             technologies and skills to manage projects effectively.
           </motion.p>
         </div>
-        <div className="mt-20 flex flex-wrap gap-7">
+        <div className="mt-20 flex flex-wrap gap-7 items-center justify-center">
           {projects.map((project, index) => (
             <ProjectCard
               key={`${project.name}${index}`}
