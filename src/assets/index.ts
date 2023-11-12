@@ -18,19 +18,19 @@ import coming_soon_leaning_left from "./project-images/coming-soon/coming-soon-l
 import coming_soon_straight from "./project-images/coming-soon/coming-soon-straight.png";
 
 // heros
-import article_scanner_hero from "./project-images/actual-projects/article-scanner-hero.png"
-import article_scanner_server from "./project-images/actual-projects/article-scanner-server.png"
+import article_scanner_hero from "./project-images/actual-projects/article-scanner-hero.png";
+import article_scanner_server from "./project-images/actual-projects/article-scanner-server.png";
 
 // tech icons
 import html from "./tech/html-5-svgrepo-com.svg";
 import css from "./tech/css-svgrepo-com.svg";
-import javascript from "./tech/js-official-svgrepo-com.svg"
-import typescript from "./tech/typescript-icon-svgrepo-com.svg"
+import javascript from "./tech/js-official-svgrepo-com.svg";
+import typescript from "./tech/typescript-icon-svgrepo-com.svg";
 import reactjs from "./tech/react-svgrepo-com.svg";
 import tailwind from "./tech/tailwind-svgrepo-com.svg";
 import aws from "./tech/aws-svgrepo-com.svg";
 // import redux from "./tech/redux.png";
-import nodejs from "./tech/node-svgrepo-com.svg"
+import nodejs from "./tech/node-svgrepo-com.svg";
 // import mongodb from "./tech/mongodb.png";
 import git from "./tech/git-svgrepo-com.svg";
 import github from "./tech/github-svgrepo-com.svg";
@@ -45,40 +45,39 @@ import cv from "./tech/curriculum-vitae-portfolio-svgrepo-com.svg";
 import cvpdf from "./cv/cvpdf.pdf";
 
 export {
-	backend,
-	itop_icon,
-	logo,
-	menu,
-	mobile,
-	salesianos_icon,
-	web,
-	xmark,
-	coming_soon_leaning_right,
-	coming_soon_leaning_left,
-	coming_soon_straight,
-	html,
-	css,
-	javascript,
-	typescript,
-	reactjs,
-	// redux,
-	nodejs,
-	// mongodb,
-	git,
-	github,
-	java,
-	springboot,
-	mysql,
-	ionic,
-	linkedin,
-	cv,
-	cvpdf,
-	tailwind,
-	aws
+  backend,
+  itop_icon,
+  logo,
+  menu,
+  mobile,
+  salesianos_icon,
+  web,
+  xmark,
+  coming_soon_leaning_right,
+  coming_soon_leaning_left,
+  coming_soon_straight,
+  html,
+  css,
+  javascript,
+  typescript,
+  reactjs,
+  // redux,
+  nodejs,
+  // mongodb,
+  git,
+  github,
+  java,
+  springboot,
+  mysql,
+  ionic,
+  linkedin,
+  cv,
+  cvpdf,
+  tailwind,
+  aws,
 };
 
 export const HEROS = {
-	article_scanner_hero,
-	article_scanner_server,
-}
-
+  article_scanner_hero,
+  article_scanner_server,
+};
