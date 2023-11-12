@@ -9,6 +9,7 @@ import { EarthCanvas } from "./canvas/Earth";
 import credentials from "../credentials.json";
 
 import { slideIn } from "../utils/motion";
+import { toast } from "sonner";
 
 function Contact() {
   const formRef = useRef();
@@ -28,41 +29,49 @@ function Contact() {
   };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setLoading(true);
+    try {
+      e.preventDefault();
+      setLoading(true);
 
-    emailjs
-      .send(
-        credentials.emailjs.SERVICE_ID,
-        credentials.emailjs.TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "Enrique",
-          from_email: form.email,
-          to_email: credentials.emailjs.TO_EMAIL,
-          message: form.message,
-        },
-        credentials.emailjs.PUBLIC_KEY,
-      )
-      .then(
-        () => {
+      toast.info("Sending message...");
+
+      emailjs
+        .send(
+          credentials.emailjs.SERVICE_ID,
+          credentials.emailjs.TEMPLATE_ID,
+          {
+            from_name: form.name,
+            to_name: "Enrique",
+            from_email: form.email,
+            to_email: credentials.emailjs.TO_EMAIL,
+            message: form.message,
+          },
+          credentials.emailjs.PUBLIC_KEY,
+        )
+        .then(
+          () => {
+            setLoading(false);
+            toast.success("Message sent successfully!");
+            setForm({
+              name: "",
+              email: "",
+              message: "",
+            });
+          },
+          (error) => {
+            setLoading(false);
+            console.error(error);
+            toast.error("Something went wrong, please try again later.");
+          },
+        )
+        .finally(() => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-          alert("Something went wrong. Please try again.");
-        },
-      )
-      .finally(() => {
-        setLoading(false);
-      });
+        });
+    } catch (error) {
+      toast.error("Something went wrong, please try again later.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
