@@ -6,7 +6,7 @@ import { mainStyles } from "../styles/mainStyles";
 import { SectionWrapper } from "../hoc";
 import { EarthCanvas } from "./canvas/Earth";
 
-import credentials from "../credentials.json";
+import credentials from "../../credentials.json";
 
 import { slideIn } from "../utils/motion";
 import { toast } from "sonner";
@@ -21,7 +21,7 @@ function Contact() {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
 
@@ -46,7 +46,7 @@ function Contact() {
             to_email: credentials.emailjs.TO_EMAIL,
             message: form.message,
           },
-          credentials.emailjs.PUBLIC_KEY,
+          credentials.emailjs.PUBLIC_KEY
         )
         .then(
           () => {
@@ -62,7 +62,7 @@ function Contact() {
             setLoading(false);
             console.error(error);
             toast.error("Something went wrong, please try again later.");
-          },
+          }
         )
         .finally(() => {
           setLoading(false);

@@ -182,6 +182,22 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
+.purple-text-gradient {
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #8e2de2, #4a00e0);
+  background: linear-gradient(to top, #8e2de2, #4a00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cyan-text-gradient {
+  background: #00c9ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #00c9ff, #92fe9d);
+  background: linear-gradient(to top, #00c9ff, #92fe9d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* canvas- styles */
 .canvas-loader {
   font-size: 10px;

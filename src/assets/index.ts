@@ -21,6 +21,7 @@ import coming_soon_straight from "./project-images/coming-soon/coming-soon-strai
 // projects
 import article_scanner_hero from "./project-images/actual-projects/article-scanner-hero.png";
 import article_scanner_server from "./project-images/actual-projects/article-scanner-server.png";
+import movie_catalog_hero from "./project-images/actual-projects/movie-catalog-hero.png";
 
 // challenges
 import codember_hero from "./project-images/challenges/codember-hero.png";
@@ -84,6 +85,7 @@ export {
 export const PROJECT_HEROS = {
   article_scanner_hero,
   article_scanner_server,
+  movie_catalog_hero,
 };
 
 export const CHALLENGES_HEROS = {

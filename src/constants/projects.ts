@@ -1,9 +1,4 @@
-import {
-  coming_soon_leaning_right,
-  coming_soon_leaning_left,
-  coming_soon_straight,
-  PROJECT_HEROS,
-} from "../assets/index";
+import { coming_soon_leaning_left, PROJECT_HEROS } from "../assets/index";
 
 export type Tag = {
   name: string;
@@ -25,19 +20,23 @@ export const projects: Project[] = [
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
       {
-        name: "react native",
+        name: "React native",
         color: "blue-text-gradient",
       },
       {
-        name: "zustand",
+        name: "Zustand",
         color: "pink-text-gradient",
       },
       {
-        name: "camera",
+        name: "Data persistence",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Camera",
         color: "green-text-gradient",
       },
       {
-        name: "accessibility",
+        name: "Accessibility",
         color: "red-text-gradient",
       },
     ],
@@ -50,11 +49,11 @@ export const projects: Project[] = [
       "A REST API designed to facilitate the storage of items from scanned barcodes and other relevant data using NodeJS, express, MVC pattern, MYSQL, zod and more",
     tags: [
       {
-        name: "nodejs",
+        name: "NodeJS",
         color: "green-text-gradient",
       },
       {
-        name: "restapi",
+        name: "REST",
         color: "blue-text-gradient",
       },
       {
@@ -62,20 +61,35 @@ export const projects: Project[] = [
         color: "pink-text-gradient",
       },
       {
-        name: "zod",
+        name: "Zod",
         color: "dark-blue-text-gradient",
       },
       {
-        name: "express",
+        name: "ExpressJS",
         color: "light-green-text-gradient",
       },
       {
-        name: "mysql",
+        name: "MySQL",
         color: "blue-text-gradient",
       },
     ],
     image: PROJECT_HEROS.article_scanner_server,
     sourceCodeLink: "https://github.com/enriquedlc/article-scanner-server",
+  },
+  {
+    name: "Movie Catalog",
+    description: "A movie catalog to explore and manage your favorite movies",
+    tags: [
+      { name: "NextJS", color: "blue-text-gradient" },
+      { name: "Hexagonal Architecture", color: "light-green-text-gradient" },
+      { name: "JWT Auth", color: "red-text-gradient" },
+      { name: "App Router", color: "cyan-text-gradient" },
+      { name: "Responsive Design", color: "purple-text-gradient" },
+      { name: "TypeScript", color: "orange-text-gradient" },
+      { name: "CSS Modules", color: "pink-text-gradient" },
+    ],
+    image: PROJECT_HEROS.movie_catalog_hero,
+    sourceCodeLink: "https://github.com/enriquedlc/movie-catalog",
   },
   {
     name: "Soon...",
